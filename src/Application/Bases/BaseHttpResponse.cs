@@ -19,7 +19,7 @@ namespace Domain.Bases
             Data = data;
         }
 
-        public BaseHttpResponse(string message, IEnumerable<ValidationFailure> failures, HttpStatusCode statusCode = HttpStatusCode.OK)
+        public BaseHttpResponse(string message, IEnumerable<ValidationFailure> failures, HttpStatusCode statusCode = HttpStatusCode.BadRequest)
         {
             StatusCode = statusCode;
             Message = message;

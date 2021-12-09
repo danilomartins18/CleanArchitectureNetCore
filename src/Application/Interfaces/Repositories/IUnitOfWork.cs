@@ -1,5 +1,4 @@
 ﻿using Domain.Entities;
-using Domain.Interfaces.Repositories;
 using System;
 
 namespace Application.Interfaces.Repositories

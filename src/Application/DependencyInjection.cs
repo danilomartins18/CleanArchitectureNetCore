@@ -1,6 +1,4 @@
-﻿using Application.Interfaces.Services;
-using Application.Serrvices;
-using FluentValidation;
+﻿using FluentValidation;
 using Microsoft.Extensions.DependencyInjection;
 using System.Reflection;
 //using FluentValidation;
@@ -13,9 +11,7 @@ namespace Application
         {
             services.AddAutoMapper(Assembly.GetExecutingAssembly());
             services.AddValidatorsFromAssembly(Assembly.GetExecutingAssembly());
-
-            // Services =====================================================
-            services.AddTransient<IProductService, ProductService>();
+                        
             return services;
         }
     }

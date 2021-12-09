@@ -1,5 +1,6 @@
 ﻿using Application.Interfaces.Repositories;
-using Domain.Interfaces.Repositories;
+using Application.Interfaces.Services;
+using Application.Serrvices;
 using Infrastructure.Context;
 using Infrastructure.Repositories;
 using Infrastructure.UoW;
@@ -21,6 +22,10 @@ namespace Infrastructure
 
             services.AddScoped(typeof(IBaseRepository<>), typeof(BaseRepository<>));
             services.AddTransient<IUnitOfWork, UnitOfWork>();
+
+            // Services =====================================================
+            services.AddTransient<IProductService, ProductService>();
+
             return services;
         }
     }

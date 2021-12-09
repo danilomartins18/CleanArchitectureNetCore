@@ -1,10 +1,9 @@
 ﻿using Application.Dtos;
-using Application.Exceptions;
+using Application.Interfaces.Repositories;
 using Application.Interfaces.Services;
 using AutoMapper;
 using Domain.Bases;
 using Domain.Entities;
-using Domain.Interfaces.Repositories;
 using FluentValidation;
 using System;
 using System.Collections.Generic;
